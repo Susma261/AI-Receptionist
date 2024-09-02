@@ -83,6 +83,7 @@ Uses GPT-2 to enhance responses with natural language guidance.
 Leveraging Streamlit for an interactive UI that guides users through different emergency scenarios.
 
 Ensure all dependencies are listed in requirements.txt and installed before running the application.
+Recording Video of Working is also attached here.
 
 ## Conclusion
 This AI receptionist system provides a robust framework for handling emergency scenarios and routine messages, enhancing the doctor's ability to respond promptly and effectively. The use of AI and machine learning technologies enables more responsive and context-aware assistance, improving patient outcomes in critical situations.
