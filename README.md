@@ -56,6 +56,37 @@ styles.py: Provides custom CSS styling for the Streamlit app to enhance the user
 ### constants.py: 
 Contains a dictionary with predefined emergency responses that are used to provide immediate guidance in case of emergencies.
 
+## How It Works
+### Initialization: 
+The app starts by initializing the FAISS index using predefined emergency scenarios. The background is set, and session states for inactivity tracking are initialized.
+
+### User Interaction:
+The user is prompted to indicate whether they are experiencing an emergency or want to leave a message.
+Depending on the user's input:
+1. Emergency: The user describes their emergency. The system searches for the closest match in the FAISS index. While simulating a delay (15 seconds) in fetching the emergency response, it asks for the user’s location.
+2. Message: If the user wants to leave a message, the app collects the message and forwards it to the doctor.
+   
+### Emergency Handling:
+Once an emergency is detected, the system checks the vector database for the closest match to the user's description.
+The appropriate guidance is displayed from the dictionary, and additional guidance is generated using GPT-2.
+
+### Inactivity Tracking: 
+If the user is inactive for more than 30 seconds, a warning is displayed, prompting them to continue interacting with the app.
+
+## Key Features and Improvements
+
+### Async Programming:
+Introduced a delay to simulate real-time data retrieval from the vector database.
+### LLM Integration: 
+Uses GPT-2 to enhance responses with natural language guidance.
+### User-Friendly Interface: 
+Leveraging Streamlit for an interactive UI that guides users through different emergency scenarios.
+
+Ensure all dependencies are listed in requirements.txt and installed before running the application.
+
+## Conclusion
+This AI receptionist system provides a robust framework for handling emergency scenarios and routine messages, enhancing the doctor's ability to respond promptly and effectively. The use of AI and machine learning technologies enables more responsive and context-aware assistance, improving patient outcomes in critical situations.
+
 
 
 
