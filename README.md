@@ -41,17 +41,19 @@ The main file for running the Streamlit app. It handles user interactions, manag
 
 ### faiss_utils.py: 
 Contains functions to initialize and interact with a FAISS index. FAISS (Facebook AI Similarity Search) is used to perform efficient similarity searches on vectorized text data (emergency descriptions). It includes:
-initialize_faiss(): Initializes the FAISS index with embeddings of emergency keys.
-find_closest_emergency(query): Finds the closest emergency in the database based on the user’s input.
+1. initialize_faiss(): Initializes the FAISS index with embeddings of emergency keys.
+2. find_closest_emergency(query): Finds the closest emergency in the database based on the user’s input.
 
 ### text_generation.py: 
 Uses Hugging Face’s GPT-2 model to generate text responses. It includes:
-get_llm_response(prompt): Generates text based on a given prompt using GPT-2.
+1. get_llm_response(prompt): Generates text based on a given prompt using GPT-2.
 
 ### session_state.py: 
 Manages user session states in Streamlit, specifically to track inactivity and provide warnings. It includes:
-check_inactivity(): Checks the time since the last user interaction and displays a warning if the user is inactive for more than 30 seconds.
-styles.py: Provides custom CSS styling for the Streamlit app to enhance the user interface, including setting a background image and styling layout components.
+1. check_inactivity(): Checks the time since the last user interaction and displays a warning if the user is inactive for more than 30 seconds.
+   
+### styles.py: 
+Provides custom CSS styling for the Streamlit app to enhance the user interface, including setting a background image and styling layout components.
 
 ### constants.py: 
 Contains a dictionary with predefined emergency responses that are used to provide immediate guidance in case of emergencies.
