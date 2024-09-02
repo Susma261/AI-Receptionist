@@ -1,6 +1,5 @@
 # AI-Receptionist for Doctor: 
 AI_Receptionist/
-│
 ├── ai_receptionist.py       
 ├── faiss_utils.py           
 ├── text_generation.py     
