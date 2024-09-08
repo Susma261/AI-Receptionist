@@ -46,7 +46,7 @@ Contains functions to initialize and interact with a FAISS index. FAISS (Faceboo
 
 ### text_generation.py: 
 Uses Hugging Face’s GPT-2 model to generate text responses. It includes:
-1. get_llm_response(prompt): Generates text based on a given prompt using GPT-2.
+1. get_llm_response_async(prompt): Generates text based on a given prompt using GPT-2 asynchronously.
 
 ### session_state.py: 
 Manages user session states in Streamlit, specifically to track inactivity and provide warnings. It includes:
